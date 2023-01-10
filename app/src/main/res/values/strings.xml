@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Apelsin Clone</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Asosiy</string>
+    <string name="transfer">O\'tkazma</string>
+    <string name="payment">To\'lov</string>
+    <string name="chat">Chat</string>
+    <string name="menu">Menu</string>
+    <string name="cancel">Bekor qilish</string>
+    <string name="sign_in_using_fingerprint">Barmoq izi yoki faceId orqali kirish</string>
+    <string name="search">Qidirish</string>
+    <string name="overall_balance">Umumiy balans</string>
+</resources>

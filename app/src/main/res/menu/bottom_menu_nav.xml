@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/transfer"
+        android:icon="@drawable/ic_transfer"
+        android:title="@string/transfer"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/payment"
+        android:icon="@drawable/ic_payment"
+        android:title="@string/payment"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/chat"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/ic_menu"
+        android:title="@string/menu"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

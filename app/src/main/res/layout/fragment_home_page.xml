@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:background="@drawable/home_page_bkg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_page_bkg"
+        app:elevation="0dp">
+
+        <LinearLayout
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_marginStart="@dimen/basic_margin"
+            android:layout_marginTop="@dimen/basic_margin_top"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:imeOptions="actionGo"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bkg_search"
+                    android:drawableStart="@drawable/ic_search"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/search"
+                    android:padding="10dp"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/basic_margin"
+                    android:layout_marginEnd="@dimen/basic_margin">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bkg_profile_icon"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_profile" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/bkg_batch"
+                        android:padding="4dp"
+                        android:text="77"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:text="@string/overall_balance"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="1 130 698"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/bkg_currency"
+                    android:paddingHorizontal="4dp"
+                    android:paddingVertical="2dp"
+                    android:text="UZS"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_gravity="fill_vertical"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="80dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bkg_top_cornered"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_marginHorizontal="@dimen/basic_margin"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/bkg_selected_card"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_margin="10dp"
+                        android:src="@drawable/temp_bank"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+                    <TextView
+                        android:includeFontPadding="false"
+                        android:textColor="@color/white"
+                        android:text="986001******9215"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_marginEnd="@dimen/basic_margin"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/white"
+                            android:text="1 130 698.25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginTop="2dp"
+                            android:textSize="14sp"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/white"
+                            android:text="HUMO"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_marginHorizontal="@dimen/basic_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/gray"
+                        android:text="Tez kirish"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/purple_500"
+                        android:text="Barchasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:nestedScrollingEnabled="true"
+                    tools:listitem="@layout/item_fast_enter"
+                    android:id="@+id/rv_fast_enter"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="@dimen/basic_margin"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/gray"
+                    android:text="Tanlangan to'lovlar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    android:layout_margin="@dimen/basic_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_margin="@dimen/basic_margin"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/image_view"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_info"
+                            android:background="@drawable/bkg_warning"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_marginStart="@dimen/basic_margin"
+                            android:text="Xatolik yuz berdi"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:src="@drawable/ic_refresh_orange"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="@dimen/basic_margin"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/gray"
+                    android:text="Joylarda to'lovlar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    android:layout_margin="@dimen/basic_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_margin="@dimen/basic_margin"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_location"
+                            android:background="@drawable/bkg_gray"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:layout_marginStart="@dimen/basic_margin"
+                            android:text="Eng yaqin savdo nuqtalarini ko'rsatish uchun telefoningiz geolokatsiyasini yoqing"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:background="@drawable/bkg_round_refresh"
+                android:layout_centerHorizontal="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/bkg_round_orange"
+                    android:src="@drawable/ic_refresh_white"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
